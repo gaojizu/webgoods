@@ -1,3 +1,5 @@
+import { asset } from '../lib/utils';
+
 export type CategoryId = 'tableware' | 'vases' | 'teaware' | 'objects';
 
 export interface Category {
@@ -58,32 +60,32 @@ export const categories: Category[] = [
     label: 'Tableware',
     shortLabel: 'Tableware',
     blurb: 'Mugs, bowls and plates for the everyday table.',
-    image: '/images/product-still-plate.jpg',
+    image: asset('/images/product-still-plate.jpg'),
   },
   {
     id: 'vases',
     label: 'Vases & planters',
     shortLabel: 'Vases',
     blurb: 'Quiet forms for branches, stems and green things.',
-    image: '/images/product-ember-vase.jpg',
+    image: asset('/images/product-ember-vase.jpg'),
   },
   {
     id: 'teaware',
     label: 'Teaware',
     shortLabel: 'Teaware',
     blurb: 'Slow pots for slow mornings.',
-    image: '/images/product-kanso-teapot.jpg',
+    image: asset('/images/product-kanso-teapot.jpg'),
   },
   {
     id: 'objects',
     label: 'Objects',
     shortLabel: 'Objects',
     blurb: 'Small pieces that make a room feel considered.',
-    image: '/images/product-onda-tray.jpg',
+    image: asset('/images/product-onda-tray.jpg'),
   },
 ];
 
-const sharedGallery = ['/images/lifestyle-table.jpg', '/images/lifestyle-studio.jpg'];
+const sharedGallery = [asset('/images/lifestyle-table.jpg'), asset('/images/lifestyle-studio.jpg')];
 
 export const products: Product[] = [
   {
@@ -93,7 +95,7 @@ export const products: Product[] = [
     category: 'tableware',
     tagline: 'A generous everyday mug with a handle that fits just right.',
     price: 32,
-    image: '/images/product-arc-mug.jpg',
+    image: asset('/images/product-arc-mug.jpg'),
     gallery: sharedGallery,
     description: [
       'Thrown in our Portland studio from high-fired stoneware, the Arc Mug has a gently tapered body, a soft thumb rest and a sand glaze that lets the iron in the clay show through. It holds twelve ounces — enough for a proper morning coffee, sturdy enough for every day.',
@@ -141,7 +143,7 @@ export const products: Product[] = [
     category: 'vases',
     tagline: 'A tall, quiet silhouette for a single branch or a whole armful.',
     price: 68,
-    image: '/images/product-ember-vase.jpg',
+    image: asset('/images/product-ember-vase.jpg'),
     gallery: sharedGallery,
     description: [
       'The Ember Vase is shaped on the wheel and altered while the clay is still soft, giving every neck a slightly different tilt. Unlined terracotta keeps the outside matte and warm; a sealed interior makes it watertight.',
@@ -188,7 +190,7 @@ export const products: Product[] = [
     category: 'teaware',
     tagline: 'An easy-pouring teapot with a hand-tied bamboo handle.',
     price: 96,
-    image: '/images/product-kanso-teapot.jpg',
+    image: asset('/images/product-kanso-teapot.jpg'),
     gallery: sharedGallery,
     description: [
       'Kanso means simplicity — a good place to start with a teapot. The rounded body holds heat, the short spout pours clean, and the removable stainless-steel infuser makes loose-leaf tea effortless.',
@@ -235,7 +237,7 @@ export const products: Product[] = [
     category: 'tableware',
     tagline: 'A low, wide bowl for everything from oats to olives.',
     price: 44,
-    image: '/images/product-dune-bowl.jpg',
+    image: asset('/images/product-dune-bowl.jpg'),
     gallery: sharedGallery,
     description: [
       'Wide enough to serve, shallow enough to eat from. The Dune Bowl is pressed with a softly irregular rim and finished in a pale sand glaze that feels like a worn stone.',
@@ -280,7 +282,7 @@ export const products: Product[] = [
     category: 'teaware',
     tagline: 'A soft olive glaze and a handle made for pouring.',
     price: 56,
-    image: '/images/product-halo-pitcher.jpg',
+    image: asset('/images/product-halo-pitcher.jpg'),
     gallery: sharedGallery,
     description: [
       'A pitcher that earns its place on the table: water at dinner, milk at breakfast, flowers on a Sunday. The Halo is dipped in a soft olive glaze that pools a little darker at the base.',
@@ -327,7 +329,7 @@ export const products: Product[] = [
     category: 'tableware',
     tagline: 'The everyday plate, with an edge that looks hand-made because it is.',
     price: 28,
-    image: '/images/product-still-plate.jpg',
+    image: asset('/images/product-still-plate.jpg'),
     gallery: sharedGallery,
     description: [
       'A dinner plate with a low, curved rim that keeps everything on it. Each one is pressed and trimmed by hand, then fired with an off-white glaze that reads warm rather than stark.',
@@ -372,7 +374,7 @@ export const products: Product[] = [
     category: 'objects',
     tagline: 'A slim column for slow evenings and taper candles.',
     price: 38,
-    image: '/images/product-column-candle-holder.jpg',
+    image: asset('/images/product-column-candle-holder.jpg'),
     gallery: sharedGallery,
     description: [
       'A quiet object with a strong shadow. The Column is thrown from dark stoneware and left with a matte, almost chalky finish that contrasts with the glow of a taper.',
@@ -419,7 +421,7 @@ export const products: Product[] = [
     category: 'tableware',
     tagline: 'Fluted tumblers that feel as good as they look.',
     price: 26,
-    image: '/images/product-ridge-tumbler.jpg',
+    image: asset('/images/product-ridge-tumbler.jpg'),
     gallery: sharedGallery,
     description: [
       'Ridges pressed into the clay give the Ridge Tumbler its grip and its shadow. The terracotta glaze is deep and warm, and the shape is just right for water, wine or a small dessert.',
@@ -466,7 +468,7 @@ export const products: Product[] = [
     category: 'vases',
     tagline: 'A rounded home for the plant that is outgrowing its pot.',
     price: 52,
-    image: '/images/product-terra-planter.jpg',
+    image: asset('/images/product-terra-planter.jpg'),
     gallery: sharedGallery,
     description: [
       'The Terra Planter is generous where it matters: a wide belly for roots, a rim deep enough to water, and a drainage hole with a matching saucer. Finished in a blush clay with tiny speckles of iron.',
@@ -511,7 +513,7 @@ export const products: Product[] = [
     category: 'objects',
     tagline: 'A wavy-edged tray for the middle of the table.',
     price: 64,
-    image: '/images/product-onda-tray.jpg',
+    image: asset('/images/product-onda-tray.jpg'),
     gallery: sharedGallery,
     description: [
       'Onda means wave. The rim of this serving tray rises and falls just enough to keep things in place, with a sand glaze that shows the motion of the hand that made it.',

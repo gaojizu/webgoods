@@ -1,3 +1,6 @@
+export const asset = (path: string) =>
+  `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`;
+
 export const formatMoney = (value: number) =>
   new Intl.NumberFormat('en-US', {
     style: 'currency',

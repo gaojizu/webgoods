@@ -12,6 +12,7 @@ import { ProductCard } from '../components/ProductCard';
 import { Reveal } from '../components/Reveal';
 import { Stars } from '../components/Stars';
 import { bestsellers, categories, newArrivals, products } from '../data/products';
+import { asset } from '../lib/utils';
 
 const perks = [
   { icon: TruckIcon, title: 'Free shipping over $75', copy: 'Carbon-neutral delivery' },
@@ -189,7 +190,7 @@ export function Home() {
           <div className="hero-visual">
             <div className="hero-frame">
               <img
-                src="/images/hero.jpg"
+                src={asset('/images/hero.jpg')}
                 alt="Handmade stoneware mug, terracotta vase and bowl on a linen table in morning light"
                 width={1024}
                 height={1280}
@@ -197,7 +198,7 @@ export function Home() {
             </div>
 
             <Link to="/product/ember-vase" className="hero-card">
-              <img src="/images/product-ember-vase.jpg" alt="" width={56} height={70} />
+              <img src={asset('/images/product-ember-vase.jpg')} alt="" width={56} height={70} />
               <span className="hero-card-body">
                 <span className="hero-card-eyebrow">New arrival</span>
                 <strong>Ember Vase</strong>
@@ -289,7 +290,7 @@ export function Home() {
         <div className="container story-inner">
           <Reveal className="story-media">
             <img
-              src="/images/lifestyle-studio.jpg"
+              src={asset('/images/lifestyle-studio.jpg')}
               alt="Hands shaping wet clay on a pottery wheel in the studio"
               loading="lazy"
             />
